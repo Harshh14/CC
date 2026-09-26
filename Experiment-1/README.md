@@ -64,4 +64,20 @@ The experiment is organized into the following sections to carry out the hypervi
 
 ---
 
+## Performance Visualization
 
+The following graphs provide a visual representation of the CPU benchmark results obtained from Proxmox VE and VMware Workstation.
+
+### CPU Throughput Comparison
+
+The chart below compares the number of events processed per second by the two hypervisor environments.
+
+![CPU Throughput Comparison](../Outputs/cpu-throughput-comparison.png)
+
+### CPU Latency Comparison
+
+The following chart compares the latency measurements, including minimum, average, 95th percentile, and maximum latency values.
+
+![CPU Latency Comparison](../Outputs/cpu-latency-comparison.png)
+
+---
