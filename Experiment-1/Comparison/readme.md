@@ -23,3 +23,5 @@ Both virtual environments were configured with the same hardware resources and s
 | **Average Latency** | **0.57 ms** | **1.41 ms** | **59.6% lower latency** with Proxmox VE |
 
 ---
+## Graphical Comparsion 
+<img width="1635" height="962" alt="image" src="https://github.com/user-attachments/assets/a673fc5e-6e46-4758-ae25-5b590a7b5238" />
