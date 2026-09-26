@@ -64,6 +64,36 @@ The experiment is organized into the following sections to carry out the hypervi
 
 ---
 
+# PART A: Performance Analysis Using Type-1 Hypervisor – Proxmox VE
+
+1. Accessing the Proxmox VE Web Interface
+2. Accessing the Proxmox VE Login Page
+3. Logging in to Proxmox VE
+4. Understanding the Proxmox VE Interface
+5. Creating a Virtual Machine in Proxmox VE
+6. Configuring General Settings
+7. Configuring the Operating System
+8. Configuring System Settings
+9. Configuring Virtual Disk
+10. Configuring CPU Resources
+11. Configuring Memory Resources
+12. Configuring Network
+13. Confirming Virtual Machine Configuration
+14. Verifying the Created Virtual Machine
+15. Starting the Virtual Machine
+16. Opening the Virtual Machine Console
+17. Installing Ubuntu Operating System
+18. Verifying the Virtual Machine
+19. Analyzing CPU Configuration
+20. Analyzing Memory Configuration
+21. Analyzing Disk Configuration
+22. Monitoring System Resource Utilization
+23. Installing Sysbench
+24. Performing CPU Performance Analysis
+25. Monitoring VM Resources from Proxmox VE
+
+
+
 ## Performance Visualization
 
 The following graphs provide a visual representation of the CPU benchmark results obtained from Proxmox VE and VMware Workstation.
