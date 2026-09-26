@@ -43,3 +43,23 @@ The CPU benchmark is executed from within the Ubuntu virtual machine on both hyp
 
 ```bash
 sysbench cpu --cpu-max-prime=20000 run
+
+---
+
+## 6. Experiment Structure
+
+The experiment is organized into the following sections to carry out the hypervisor performance evaluation systematically:
+
+- **Part A – Proxmox VE:**  
+  Creation and configuration of the virtual machine on Proxmox VE, followed by Ubuntu installation, system-resource verification, and execution of the CPU benchmark.
+
+- **Part B – VMware Workstation:**  
+  Setup of an equivalent virtual machine using VMware Workstation, followed by Ubuntu installation, configuration verification, and execution of the same CPU benchmark.
+
+- **Performance Comparison:**  
+  The benchmark results obtained from both hypervisors are collected and compared using appropriate tables and graphical representations.
+
+- **Analysis and Discussion:**  
+  The observed performance values are examined to identify differences between the Type-1 and Type-2 virtualization environments and to understand their effect on CPU benchmark performance.
+
+---
