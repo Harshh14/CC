@@ -166,4 +166,12 @@ The following parameters should be observed:
 ---
 
 ## 8. Implementation Evidances (Outputs)
-Screenshot 1: Proxmox Dashboard
+1) Promxmox Dashboard
+2) Proxmox VM Configuration 
+3) Proxmox VM Running
+4) Ubuntu Console Inside Proxmox VM
+5) System Configuration Verification 
+6) Sysbench CPU Benchmark Result
+7) Proxmox Resource Monitoring 
+##
+(ALL OUTPUTS ATTACHED IN THE FOLDER)
