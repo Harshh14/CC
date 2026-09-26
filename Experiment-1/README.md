@@ -39,10 +39,10 @@ To make the comparison consistent and fair, both virtual machines are configured
 
 ## 5. Benchmark Command
 
-The CPU benchmark is executed from within the Ubuntu virtual machine on both hypervisor platforms using the following command:
-
 ```bash
 sysbench cpu --cpu-max-prime=20000 run
+```
+The CPU benchmark is executed from within the Ubuntu virtual machine on both hypervisor platforms using the same benchmark configuration
 
 ---
 
@@ -63,3 +63,5 @@ The experiment is organized into the following sections to carry out the hypervi
   The observed performance values are examined to identify differences between the Type-1 and Type-2 virtualization environments and to understand their effect on CPU benchmark performance.
 
 ---
+
+
