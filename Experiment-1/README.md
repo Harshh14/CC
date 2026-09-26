@@ -91,6 +91,9 @@ The experiment is organized into the following sections to carry out the hypervi
 23. Installing Sysbench
 24. Performing CPU Performance Analysis
 25. Monitoring VM Resources from Proxmox VE
+    
+    <img width="1000" height="530" alt="image" src="https://github.com/user-attachments/assets/9031c003-830a-4331-bff1-75071a9da5ef" />
+
 
 ## PART B: PERFORMANCE ANALYSIS USING TYPE-2 HYPERVISOR – VMWARE WORKSTATION
 
