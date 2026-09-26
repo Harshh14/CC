@@ -113,7 +113,7 @@ The experiment is organized into the following sections to carry out the hypervi
 17. Installing Sysbench
 18. Performing CPU Performance Analysis
 19. Monitoring Resource Utilization in VMware Workstation
-20. 
+
 ## Performance Visualization
 
 The following graphs provide a visual representation of the CPU benchmark results obtained from Proxmox VE and VMware Workstation.
@@ -122,12 +122,12 @@ The following graphs provide a visual representation of the CPU benchmark result
 
 The chart below compares the number of events processed per second by the two hypervisor environments.
 
-![CPU Throughput Comparison](../Outputs/cpu-throughput-comparison.png)
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/d961263c-5596-46c2-ba7e-016bc223f441" />
+
 
 ### CPU Latency Comparison
 
 The following chart compares the latency measurements, including minimum, average, 95th percentile, and maximum latency values.
-
-![CPU Latency Comparison](../Outputs/cpu-latency-comparison.png)
+<img width="1600" height="960" alt="image" src="https://github.com/user-attachments/assets/ff915252-eb83-4cac-80c8-7858177d1989" />
 
 ---
