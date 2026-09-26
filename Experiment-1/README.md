@@ -92,8 +92,28 @@ The experiment is organized into the following sections to carry out the hypervi
 24. Performing CPU Performance Analysis
 25. Monitoring VM Resources from Proxmox VE
 
+## PART B: PERFORMANCE ANALYSIS USING TYPE-2 HYPERVISOR – VMWARE WORKSTATION
 
-
+1. Launching VMware Workstation
+2. Selecting the Virtual Machine Configuration
+3. Selecting the Guest Operating System Installation Method
+4. Selecting the Guest Operating System
+5. Naming the Virtual Machine
+6. Configuring Virtual Disk Capacity
+7. Customizing Virtual Machine Hardware
+8. Completing Virtual Machine Creation
+9. Starting the Virtual Machine
+10. Installing Ubuntu Operating System
+11. Restarting the Virtual Machine
+12. Verifying the Virtual Machine Configuration
+13. Verifying CPU Configuration
+14. Verifying Memory Configuration
+15. Verifying Disk Configuration
+16. Monitoring System Resource Utilization
+17. Installing Sysbench
+18. Performing CPU Performance Analysis
+19. Monitoring Resource Utilization in VMware Workstation
+20. 
 ## Performance Visualization
 
 The following graphs provide a visual representation of the CPU benchmark results obtained from Proxmox VE and VMware Workstation.
