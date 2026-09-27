@@ -116,6 +116,8 @@ The experiment is organized into the following sections to carry out the hypervi
 17. Installing Sysbench
 18. Performing CPU Performance Analysis
 19. Monitoring Resource Utilization in VMware Workstation
+    <img width="1600" height="1010" alt="image" src="https://github.com/user-attachments/assets/3fc250f4-c5c0-452c-9488-f68162911f10" />
+
 
 ## Performance Visualization
 
