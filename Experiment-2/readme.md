@@ -70,3 +70,75 @@ free -h > docs/memory-info.txt
 lsblk > docs/storage-info.txt
 uname -a > docs/kernel-info.txt
 ```
+
+### Server Setup
+
+1. Project Root Creation
+2. Directory Navigation
+3. Verify Working Directory
+4. Directory Structure Creation
+5. Hardware Info Collection
+6. Verify Generated Docs
+7. Check vCPUs (`nproc`)
+8. Check RAM (`free -h`)
+9. Check Block Devices (`lsblk`)
+10. Check Disk Space (`df -h`)
+
+### 5.2 Tool Installation & Docker Environment Setup
+
+All required benchmarking and monitoring tools were installed inside the Ubuntu VM, along with Docker for container-based testing.
+
+```bash
+sudo apt update
+sudo apt install -y sysbench fio iperf3 htop iotop sysstat python3 python3-pip git
+sudo apt install -y docker.io
+sudo systemctl enable --now docker
+sudo usermod -aG docker $USER
+newgrp docker
+docker run --rm hello-world
+```
+
+### Installation Step
+
+1. APT Repository Update
+2. Install Benchmarking Tools
+3. Verify Tool Versions
+4. Install Docker Engine
+5. Enable Docker Service
+6. Verify Docker Version
+7. Test Docker with `hello-world`
+8. Configure User Permissions
+
+### 5.3 Building the Benchmark Docker Image
+
+To maintain a consistent testing environment, a standardized Docker image named `vm-container-benchmark` was created with the required benchmarking and monitoring tools. The image was built using `docker/Dockerfile`.
+
+```dockerfile
+FROM ubuntu:24.04
+RUN apt-get update && \
+    apt-get install -y \
+    sysbench \
+    fio \
+    iperf3 \
+    python3 \
+    python3-pip \
+    procps \
+    sysstat && \
+    rm -rf /var/lib/apt/lists/*
+WORKDIR /benchmark
+```
+
+### Docker Image Build & Verification
+
+```bash
+mkdir -p docker
+
+# Build the image from the Dockerfile
+docker build -t vm-container-benchmark -f docker/Dockerfile .
+
+# Display available Docker images
+docker images
+
+# Verify the installed Sysbench version inside the container
+docker run --rm -it vm-container-benchmark sysbench --version
+```
