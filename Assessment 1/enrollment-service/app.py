@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 import requests
 import os
 
@@ -24,7 +24,9 @@ enrollments = {
     102: ["DAA301"],
     103: ["DBMS301"]
 }
-
+@app.route("/")
+def home():
+    return render_template("index.html")
 
 # Get enrollment details for a student
 @app.route("/enrollment/<int:student_id>", methods=["GET"])

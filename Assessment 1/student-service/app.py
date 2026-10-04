@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 
 app = Flask(__name__)
 
@@ -25,6 +25,9 @@ students = {
     }
 }
 
+@app.route("/")
+def home():
+    return render_template("index.html")
 
 # API endpoint to get student details
 @app.route("/students/<int:student_id>", methods=["GET"])
