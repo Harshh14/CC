@@ -3,7 +3,7 @@ from flask import Flask, jsonify, render_template
 app = Flask(__name__)
 
 
-# Sample course data
+# Course data
 courses = {
     "CC301": {
         "courseId": "CC301",
@@ -11,25 +11,30 @@ courses = {
         "credits": 4,
         "department": "CSE"
     },
-    "DAA301": {
-        "courseId": "DAA301",
-        "courseName": "Design and Analysis of Algorithms",
+
+    "PC302": {
+        "courseId": "PC302",
+        "courseName": "Parallel Computing & GPU",
         "credits": 4,
         "department": "CSE"
     },
-    "DBMS301": {
-        "courseId": "DBMS301",
-        "courseName": "Database Management Systems",
+
+    "CNS303": {
+        "courseId": "CNS303",
+        "courseName": "Cryptography & Network Security",
         "credits": 4,
         "department": "CSE"
     }
 }
 
+
+# Web interface
 @app.route("/")
 def home():
     return render_template("index.html")
 
-# Get course details
+
+# API endpoint to get course details
 @app.route("/courses/<course_id>", methods=["GET"])
 def get_course(course_id):
 
@@ -46,17 +51,14 @@ def get_course(course_id):
 # Health check
 @app.route("/health", methods=["GET"])
 def health():
-
     return jsonify({
         "service": "course-service",
-        "status": "running"
+        "status": "healthy"
     })
 
 
-# Start Flask server
 if __name__ == "__main__":
     app.run(
         host="0.0.0.0",
-        port=5002,
-        debug=True
+        port=5002
     )
